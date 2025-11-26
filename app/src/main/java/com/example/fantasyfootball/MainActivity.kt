@@ -14,11 +14,16 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.fantasyfootball.ui.NavGraph
 import com.example.fantasyfootball.ui.components.BottomBar
 import com.example.fantasyfootball.ui.navigation.Routes
+import com.example.fantasyfootball.ui.theme.FantasyFootballTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { FantasyApp() }
+        setContent {
+            FantasyFootballTheme {
+                FantasyApp()
+            }
+        }
     }
 }
 
@@ -57,5 +62,7 @@ fun FantasyApp() {
 @Preview(showBackground = true)
 @Composable
 fun PreviewApp() {
-    FantasyApp()
+    FantasyFootballTheme {
+        FantasyApp()
+    }
 }
