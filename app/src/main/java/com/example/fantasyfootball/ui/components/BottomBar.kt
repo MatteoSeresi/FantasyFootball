@@ -9,17 +9,17 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.compose.runtime.getValue
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.example.fantasyfootball.ui.navigation.Screen
+import com.example.fantasyfootball.ui.navigation.Routes
 
 @Composable
 fun BottomBar(navController: NavHostController, modifier: Modifier = Modifier) {
     val items = listOf(
-        Screen.Home,
-        Screen.Team,
-        Screen.Calendar,
-        Screen.Stats,
-        Screen.Ranking,
-        Screen.Profile
+        Routes.Home,
+        Routes.Team,
+        Routes.Calendar,
+        Routes.Stats,
+        Routes.Ranking,
+        Routes.Profile
     )
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()

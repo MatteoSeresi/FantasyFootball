@@ -3,8 +3,6 @@ package com.example.fantasyfootball
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -15,7 +13,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.fantasyfootball.ui.NavGraph
 import com.example.fantasyfootball.ui.components.BottomBar
-import com.example.fantasyfootball.ui.navigation.Screen
+import com.example.fantasyfootball.ui.navigation.Routes
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,12 +32,12 @@ fun FantasyApp() {
 
     // schermate dove la bottom bar deve apparire
     val bottomBarRoutes = listOf(
-        Screen.Home.route,
-        Screen.Team.route,
-        Screen.Calendar.route,
-        Screen.Stats.route,
-        Screen.Ranking.route,
-        Screen.Profile.route
+        Routes.Home.route,
+        Routes.Team.route,
+        Routes.Calendar.route,
+        Routes.Stats.route,
+        Routes.Ranking.route,
+        Routes.Profile.route
     )
     val showBottomBar = currentRoute in bottomBarRoutes
 
