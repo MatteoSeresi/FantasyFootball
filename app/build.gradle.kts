@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.fantasyfootball"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.fantasyfootball"
@@ -59,7 +59,6 @@ dependencies {
     implementation("androidx.room:room-runtime:2.5.2")
     implementation("androidx.room:room-ktx:2.5.2")
     kapt("androidx.room:room-compiler:2.5.2")
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -45,18 +45,6 @@ fun RegisterScreen(onRegisterSuccess: () -> Unit, onBackToLogin: () -> Unit) {
 }
 
 @Composable
-fun HomeScreen() {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background),
-        contentAlignment = Alignment.Center
-    ) {
-        Text("Schermata Home")
-    }
-}
-
-@Composable
 fun TeamScreen() {
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Text("Schermata Gestione Squadra")
