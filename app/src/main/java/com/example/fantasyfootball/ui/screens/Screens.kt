@@ -31,7 +31,7 @@ fun LoginScreen(onLoginSuccess: () -> Unit, onRegister: () -> Unit) {
 fun RegisterScreen(onRegisterSuccess: () -> Unit, onBackToLogin: () -> Unit) {
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            Text("Schermata Registrazione")
+            Text("Schermatta Registrazione")
             Spacer(modifier = Modifier.height(16.dp))
             Button(onClick = { onRegisterSuccess() }) {
                 Text("Registrati (demo)")
